@@ -11,9 +11,12 @@ import Alamofire
 
 class DeviceTableViewCell: UITableViewCell {
   
+  var temperatures = [Int]()
+  
   @IBOutlet var deviceLabel: UILabel?
   @IBOutlet var deviceStatus: UILabel?
   @IBOutlet var deviceSwitch: UISwitch?
+  @IBOutlet var lockButton: UIButton?
   
   @IBOutlet weak var temperatureInput: UITextField?;
   @IBOutlet var temperatureConstraint: NSLayoutConstraint?;
@@ -43,19 +46,19 @@ extension DeviceTableViewCell : UIPickerViewDataSource {
   }
   
   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return 5
+    return 20
   }
 }
 
 extension DeviceTableViewCell : UIPickerViewDelegate {
   
   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    temperatureInput?.text = "77";
+    temperatureInput?.text = "\(row + 65)°"
     temperatureInput?.resignFirstResponder();
   }
   
   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return "75"
+    return "\(row + 65)°"
   }
   
 }

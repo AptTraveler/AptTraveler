@@ -140,6 +140,7 @@
 				TargetAttributes = {
 					15115A841C393C9B004107A4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 34K4Y52BUG;
 					};
 				};
 			};
@@ -343,6 +344,7 @@
 			baseConfigurationReference = DE4F59B9384DD8764FABB889 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "AptTraveler-Client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apttraveler.AptTraveler-Client";
@@ -355,6 +357,7 @@
 			baseConfigurationReference = 9C8688B8D08CCED94C62DA2B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "AptTraveler-Client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apttraveler.AptTraveler-Client";
