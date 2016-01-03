@@ -143,6 +143,9 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="49" id="68v-hj-wD7"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <action selector="handleSwitch:" destination="Y63-Ka-8Gl" eventType="valueChanged" id="dnd-TK-VLt"/>
+                                                            </connections>
                                                         </switch>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ou9-n6-z7I">
                                                             <rect key="frame" x="484" y="13" width="100" height="30"/>

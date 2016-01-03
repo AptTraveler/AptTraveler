@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class DeviceTableViewCell: UITableViewCell {
   
@@ -32,6 +33,7 @@ class DeviceTableViewCell: UITableViewCell {
 
       // Configure the view for the selected state
   }
+  
 }
 
 extension DeviceTableViewCell : UIPickerViewDataSource {

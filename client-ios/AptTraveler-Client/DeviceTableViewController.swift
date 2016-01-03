@@ -24,6 +24,22 @@ class DeviceTableViewController: UITableViewController {
         }
     }
   }
+  
+  @IBAction func handleSwitch(sender: UISwitch) {
+    var device = devices[sender.tag];
+    if sender.on {
+      let headers = [
+        "Authorization": "Bearer 57d7bec7-af4b-4382-8733-a30c923b0d77"
+      ]
+      
+      Alamofire.request(.GET, "https://graph.api.smartthings.com/api/smartapps/installations/0fdb46dc-c87a-4414-bb26-5811d0a94d71/devices/\(device["id"].stringValue)/switch", headers: headers)
+        .responseJSON { response in
+          debugPrint(response)
+      }
+    } else {
+      
+    }
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +89,7 @@ class DeviceTableViewController: UITableViewController {
         cell.deviceSwitch?.hidden = false
         cell.deviceSwitch?.on = device["state"].stringValue == "on"
         cell.deviceStatus?.text = device["state"].stringValue;
+        cell.deviceSwitch?.tag = indexPath.row;
       } else {
         cell.temperatureInput?.hidden = true
         cell.deviceStatus?.hidden = false
