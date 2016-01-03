@@ -1,0 +1,36 @@
+{
+  "name": "Device",
+  "plural": "Devices",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "state": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "setting": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "home": {
+      "type": "belongsTo",
+      "model": "Home",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

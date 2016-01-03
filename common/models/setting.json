@@ -1,0 +1,24 @@
+{
+  "name": "Setting",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "trigger": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string"
+    },
+    "eco": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

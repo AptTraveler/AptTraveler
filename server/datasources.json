@@ -1,0 +1,28 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "cloudant": {
+    "host": "37dd672c-b024-49a7-8a24-d53f1545d05a-bluemix.cloudant.com",
+    "port": 443,
+    "name": "cloudant",
+    "connector": "couch",
+    "db": "apttraveler",
+    "protocol": "https",
+    "auth": {
+      "admin": {
+        "username": "37dd672c-b024-49a7-8a24-d53f1545d05a-bluemix",
+        "password": "07d9b5e14d59b8a73828fd26acdf8e3ba634c889d9003faf6f553c6ab074aff7"
+      },
+      "reader": {
+        "username": "37dd672c-b024-49a7-8a24-d53f1545d05a-bluemix",
+        "password": "07d9b5e14d59b8a73828fd26acdf8e3ba634c889d9003faf6f553c6ab074aff7"
+      },
+      "writer": {
+        "username": "37dd672c-b024-49a7-8a24-d53f1545d05a-bluemix",
+        "password": "07d9b5e14d59b8a73828fd26acdf8e3ba634c889d9003faf6f553c6ab074aff7"
+      }
+    }
+  }
+}
